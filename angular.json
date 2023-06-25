@@ -17,6 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "bn.js",
+              "aes-js",
+              "scrypt-js",
+              "js-sha3",
+              "bech32",
+              "hash.js"
+            ],
             "outputPath": "dist/belajar-dapps",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -100,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
